@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#191919;
+    font-family: DM Sans ;
+    width: 100%;
+    max-width: 1920px;
+    margin:0 15%;
+}
+.firstScreen{
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+}
+
+/* Navigation bar */
+
+nav{
+    width: 100%;
+    max-width: 1440px;
+    height: 70px;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: row;
+    margin: 26px 0 0 0;
+    padding:0 50px
+}
+nav h2{
+    font-size: 35px;
+    padding-top:20px;
+}
+.navItems{
+    display: flex;
+    flex-direction: row;
+    margin-left:777px;
+    padding:20px;
+}
+.navItems p{
+    margin:10px;
+    font-size: 20px;
+}
+.navItems p:hover{
+    color: #118DA8;
+}
+.infoArea{
+    width: 100%;
+    max-width: 1240;
+}
+
+/* Main block on first screen */
+
+.faceOfPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:40px;
+    font-family: inherit;
+    color: #FFFFFF;
+}
+.mainPhoto{
+    width: 50%;
+}
+.mainPhoto:first-child{
+    background-image: url(/source/images/icons/beamsup.svg) cover;
+    background-color: red;
+}
+.infoArea{
+    margin:60px;
+}
+.infoArea h1{
+    font-size: 70px;    
+}
+.bottomSection{
+    margin-top:70px;
+    font-size: 15px;
+    padding:20px;
+}
+.links{
+    padding-top:20px;
+}
+.links a{
+    padding-right:10px;
+}
+.strongWord{
+    font-size: 80px;
+}
+.underLine{
+    background-image: url(/source/images/icons/blueLine.svg);
+}
+.links img{
+    width: 32px;
+}
