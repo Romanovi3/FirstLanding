@@ -7,7 +7,7 @@ body{
     background-color:#191919;
     font-family: DM Sans ;
     width: 100%;
-    max-width: 1920px;
+    max-width: 1440px;
     margin:0 15%;
 }
 .firstScreen{
@@ -92,4 +92,113 @@ nav h2{
 }
 .links img{
     width: 32px;
+}
+
+/* Latest Episodes */
+
+.latestEp{
+    margin-top: 100px;
+}
+.lateEpTitles{
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    height: 99px;
+    margin:50px; 
+}
+.lateEpTitles h2{
+    font-family: DM sans;
+    font-style: normal;
+    color: #fff;
+    font-size: 64px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    line-height: 79.2px;
+}
+/* Knopka episodes */
+.blueBtn{
+    margin:24px 0 24px 610px;
+    border-radius: 6px;
+    background-color:#118DA8;
+    border-style: none;
+    border-color: 0;
+    border-image: none;
+    width: 178px;
+    height: 51px;
+}
+.blueBtn:hover{
+    box-shadow: 1px 1px 5px 3px white;
+}
+.blueBtn a{
+    text-decoration: none;
+    padding:12px 15px 12px 20px;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+}
+
+/* Episodes Frames */
+
+.epSections{
+    width: 1330px;
+    height: 545px;
+    border-radius: 32px;
+    background-color: #000;
+    color: #fff;
+}
+.ep{
+    display: flex;
+    flex-direction: row;
+    padding:40px;
+    margin-bottom:60px;
+}
+.epInfo{
+    margin-left:53px;
+    width: 778px;
+    height: 465px;
+}
+/* Info texts */
+.epInfo h5{
+    width: 73px;
+    height: 27px;
+    background-color: #191919;
+    border-radius: 6px;
+    padding: 0 16px;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+.epInfo p{
+    color: #118DA8;
+    font-family: DM Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin:48px 0 18px 0;
+}
+.epInfo h2{
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70.4px;
+    letter-spacing: 2.56px;
+    width: 701px;
+}
+.epInfo span{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: DM Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    width: 757px;
+}
+#epInfoButton{
+    margin:25px 570px 0 0;
 }
