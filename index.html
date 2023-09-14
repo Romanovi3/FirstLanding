@@ -7,21 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
-   
+    <script src="script.js" defer></script>
     <title>Castaway</title>
 </head>
     <body>
-        <div class="firstScreen">
-            <nav>
+        <div class="firstScreen"  >
+            <nav id="header">
                  <h2>Castaway</h2>
                     <div class="navItems">
-                        <p>Home</p>
-                        <p>Episodes</p>
-                        <p>About</p>
-                        <p>Contact</p>
+                        <p><a href="#Home">Home</a></p>
+                        <p><a href="#Episodes">Episodes</a></p>
+                        <p><a href="#aboutCeo">About</a></p>
+                        <p><a href="/">Contact</a></p>
                     </div>
             </nav>
-            <div class="faceOfPage">
+            <div class="faceOfPage" id="Home">
                 <img src="source/images/mainphoto.png" alt="Jacob" class="mainphoto">
                 <div class="infoArea">
                     <h1>Take your podcast to the <span class="underLine">next</span> <span class="strongWord">level</span></h1>
@@ -38,7 +38,7 @@
                 </div>
                 
             </div>
-            <div class="latestEp">
+            <div class="latestEp" id="Episodes">
                 <div class="lateEpTitles">
                     <h2>Latest episodes</h2>
                     <button class="blueBtn"><a href="/" target="_blank">View all episodes</a></button>
@@ -58,10 +58,10 @@
                     <div class="ep">
                         <img src="source/images/mic.png" alt="Soundpad">
                         <div class="epInfo">
-                            <h5>Gear</h5>
-                            <p>Episode 3</p>
-                            <h2>Should you get outboard audio gear?</h2>
-                            <span>Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</span>
+                            <h5>Tips & Tricks</h5>
+                            <p>Episode 2</p>
+                            <h2>Mic tricks to take you to the next level</h2>
+                            <span>Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.</span>
                             <button class="blueBtn" id="epInfoButton"><a href="/" target="_blank">View episodes details</a></button>
                         </div>
                     </div>
@@ -70,13 +70,23 @@
                         <img src="source/images/bestmic.png" alt="Soundpad">
                         <div class="epInfo">
                             <h5>Gear</h5>
-                            <p>Episode 3</p>
-                            <h2>Should you get outboard audio gear?</h2>
-                            <span>Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</span>
+                            <p>Episode 1</p>
+                            <h2>The best microphone under $200</h2>
+                            <span>With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.</span>
                             <button class="blueBtn" id="epInfoButton"><a href="/" target="_blank">View episodes details</a></button>
                         </div>
                     </div>
+                </div>
+            <div class="ceoPage" id="aboutCeo">
+                <div class="ceoInfo">
+                    <a href="/" target="_blank"><img src="source/images/arrow.png" alt="dirrection"></a>
+                    <p>Meet your host</p>
+                    <h2>Jacob Paulner</h2>
+                    <span>Jacob has a background in audio engineering, and has been podcasting since the early days.</span>
+                    <br>
+                    <span>He’s here to help you level up your game by sharing everything he’s learned along the way.</span>
+                </div>
+                <img src="source/images/founder.png" alt="Jacob Paulaner" style="width: 650px; height: 743px; flex-shrink: 0;">
             </div>
-        </div>
     </body>
 </html>
