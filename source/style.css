@@ -7,10 +7,15 @@ body{
     background-color:#191919;
     font-family: DM Sans ;
     width: 100%;
-    max-width: 1440px;
+    max-width: 100%;
     min-width: 720px;
-    margin:0 15%;
+    /* margin:0 15%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 .firstScreen{
     width: 100%;
     max-width: 1440px;
@@ -28,7 +33,9 @@ nav{
     display: flex;
     flex-direction: row;
     margin: 26px 0 0 0;
-    padding:0 50px
+    padding:0 50px;
+    justify-content: center;
+    align-items: center;
 }
 nav h2{
     font-size: 35px;
@@ -47,26 +54,33 @@ nav h2{
     text-decoration: none;
 }
 .navItems a:visited{
-    color:inherit;
+    color:#FFFFFF;
 }
 .navItems a:hover{
     color: #118DA8;
+    transition: 0.3s;
 }
 
-.infoArea{
-    width: 100%;
-    max-width: 1240;
-}
 /* Sticky header */
+
 .stickyHeader{
     position: fixed;
     top: 0;
-    width: 1360px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
     background-color: rgba(63, 59, 59, 0.7);
-    border-radius: 25px;
     height: fit-content;
-    margin-top:0;
-    
+    margin:0;
+ 
+   
+}
+.navItems li{
+    list-style-type: none;   
+}
+.infoArea{
+    width: 100%;
+    max-width: 1240;
 }
 
 /* Main block on first screen */
@@ -115,9 +129,6 @@ nav h2{
 
 /* Latest Episodes */
 
-.latestEp{
-    margin-top: 100px;
-}
 .lateEpTitles{
     display: flex;
     flex-direction: row;
@@ -134,7 +145,9 @@ nav h2{
     font-weight: 400;
     line-height: 79.2px;
 }
+
 /* Knopka episodes */
+
 .blueBtn{
     margin:24px 0 24px 610px;
     border-radius: 6px;
@@ -143,10 +156,11 @@ nav h2{
     border-color: 0;
     border-image: none;
     width: fit-content;
-    height: 51px;
+    height: 51px;  
 }
 .blueBtn:hover{
-    box-shadow: 1px 1px 5px 3px white;
+    box-shadow: 0 0 6px 4px rgba(255, 255, 255, 0.70);
+    transition: 0.2s;
 }
 .blueBtn a{
     text-decoration: none;
@@ -225,14 +239,18 @@ nav h2{
 }
 
 /* CEO PAGE */
+
 .ceoPage{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: inherit;
+    width: 1400px;
+    margin-top:100px;
 }
 .ceoInfo{
-    margin-right: 60px;
+    margin-right: 40px;
+    max-width:590px ;
 }
 .ceoInfo a{
     width: 112px;
@@ -245,7 +263,8 @@ nav h2{
     align-items: center;  
 }
 .ceoInfo a:hover{
-    box-shadow: 1px 1px 6px 2px  white;
+    box-shadow: 0 0 6px 2px  white;
+    transition: 0.3s;
 }
 .ceoInfo img{
     padding:34px 24px 40px 17px;
@@ -283,3 +302,102 @@ nav h2{
 .ceoInfo span:nth-child(2){
     margin-top:33px;
 }
+ /* Email Form Section */
+ .emailFormSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    height: 387px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #000;
+    margin: 150px 50px 100px 50px;
+ }
+ .emailFormTexts{
+    margin: 80px 120px 120px 60px;
+    width: 50%;
+ }
+ .emailFormTexts p{
+    color: #118DA8;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+ }
+ .emailFormTexts h3{
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+    width: 431px;
+    padding:
+ }
+ .emailForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width: 50%;
+    margin:5%
+ }
+ .emailForm input{
+    width: 100%;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid #191919;
+    background: #191919;
+    margin-bottom:20px;color: rgba(255, 255, 255, 0.70);
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    padding:20px;
+ }
+ .emailForm input::placeholder{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    padding:20px 440px 20px 20px;
+ }
+ .emailForm input:focus{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    padding:20px;
+    transition: 1s;
+ }
+ .emailForm input:disabled{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    padding:20px;
+ }
+ .emailFormButton{
+    margin: 0;
+    width: 87px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-right:auto;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+ }

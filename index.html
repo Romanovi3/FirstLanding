@@ -7,20 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="script.js" defer ></script>
     <title>Castaway</title>
 </head>
     <body>
+        <nav id="header">
+            <h2>Castaway</h2>
+               <ul class="navItems">
+                   <li><a href="#Home">Home</a></li>
+                   <li><a href="#Episodes">Episodes</a></li>
+                   <li><a href="#aboutCeo">About</a></li>
+                   <lip><a href="/">Contact</a></p>
+               </ul>
+       </nav>
         <div class="firstScreen"  >
-            <nav id="header">
-                 <h2>Castaway</h2>
-                    <div class="navItems">
-                        <p><a href="#Home">Home</a></p>
-                        <p><a href="#Episodes">Episodes</a></p>
-                        <p><a href="#aboutCeo">About</a></p>
-                        <p><a href="/">Contact</a></p>
-                    </div>
-            </nav>
             <div class="faceOfPage" id="Home">
                 <img src="source/images/mainphoto.png" alt="Jacob" class="mainphoto">
                 <div class="infoArea">
@@ -35,9 +35,9 @@
                                 <a href="https://overcast.fm/" target="_blank"><img src="source/images/icons/overcast.svg" alt="Overcast"></a>                 
                             </div>   
                     </div>
-                </div>
-                
+                </div>     
             </div>
+        </div>
             <div class="latestEp" id="Episodes">
                 <div class="lateEpTitles">
                     <h2>Latest episodes</h2>
@@ -54,6 +54,8 @@
                             <button class="blueBtn" id="epInfoButton"><a href="/" target="_blank">View episodes details</a></button>
                         </div>
                     </div>
+                </div>
+
                 <div class="epSections">
                     <div class="ep">
                         <img src="source/images/mic.png" alt="Soundpad">
@@ -65,6 +67,7 @@
                             <button class="blueBtn" id="epInfoButton"><a href="/" target="_blank">View episodes details</a></button>
                         </div>
                     </div>
+                </div>
                 <div class="epSections">
                     <div class="ep">
                         <img src="source/images/bestmic.png" alt="Soundpad">
@@ -77,6 +80,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             <div class="ceoPage" id="aboutCeo">
                 <div class="ceoInfo">
                     <a href="/" target="_blank"><img src="source/images/arrow.png" alt="dirrection"></a>
@@ -86,7 +90,18 @@
                     <br>
                     <span>He’s here to help you level up your game by sharing everything he’s learned along the way.</span>
                 </div>
-                <img src="source/images/founder.png" alt="Jacob Paulaner" style="width: 650px; height: 743px; flex-shrink: 0;">
+                <img src="source/images/founder.png" alt="Jacob Paulaner" style="width: 650px; height: auto; flex-shrink: 0;">
+            </div>
+            <div class="emailFormSection">
+                <div class="emailFormTexts">
+                    <p>Email Newsletter</p>
+                    <h3>Subscribe for updates</h3>
+                </div>
+                <div class="emailForm">
+                    <input type="text" name="name" placeholder="Name" id="emailFormName">
+                    <input type="email" name="email" placeholder="Email" id="emailFormEmail">
+                    <button class="blueBtn emailFormButton" id="efBtn">Submit</button>
+                </div>
             </div>
     </body>
 </html>
