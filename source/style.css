@@ -6,52 +6,47 @@
 body{
     background-color:#191919;
     font-family: DM Sans ;
-    width: 100%;
-    max-width: 100%;
-    min-width: 720px;
-    /* margin:0 15%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
-.firstScreen{
-    width: 100%;
-    max-width: 1440px;
-    min-width: 720px;
-    height: 100vh;
+/* Main Container */
+
+.mainContainer{
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Navigation bar */
 
 nav{
-    width: 100%;
+    /* width: 100%; */
     max-width: 1440px;
     height: 70px;
     color:#FFFFFF;
     display: flex;
     flex-direction: row;
-    margin: 26px 0 0 0;
-    padding:0 50px;
-    justify-content: center;
+    margin-top:1%;
+    justify-content: space-between;
     align-items: center;
 }
 nav h2{
     font-size: 35px;
-    padding-top:20px;
+    padding-top:1rem;
 }
 .navItems{
     display: flex;
     flex-direction: row;
-    margin-left:777px;
-    padding:20px;
+    margin-left:50vw;
     margin-top: 1%;
 }
 .navItems a{
-    margin:10px;
+    margin:1rem;
     font-size: 20px;
     text-decoration: none;
+    color:#118DA8;
 }
 .navItems a:visited{
     color:#FFFFFF;
@@ -67,13 +62,13 @@ nav h2{
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 100vw;
+    max-height: 5%;
+    /* min-width: 100%; */
     background-color: rgba(63, 59, 59, 0.7);
     height: fit-content;
     margin:0;
- 
-   
+    padding: 2rem 14.5rem;
 }
 .navItems li{
     list-style-type: none;   
@@ -82,6 +77,15 @@ nav h2{
     width: 100%;
     max-width: 1240;
 }
+
+
+/* .firstScreen{
+    width: 100%;
+    max-width: 1440px;
+    min-width: 720px;
+    height: 100vh;
+} */
+
 
 /* Main block on first screen */
 
@@ -104,7 +108,8 @@ nav h2{
     margin:60px;
 }
 .infoArea h1{
-    font-size: 70px;    
+    font-size: 70px;
+    max-width: 100%;
 }
 .bottomSection{
     margin-top:70px;
@@ -128,13 +133,19 @@ nav h2{
 }
 
 /* Latest Episodes */
-
+.latestEp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .lateEpTitles{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    width: 1300px;
-    height: 99px;
-    margin:50px; 
+    height: 2%;
+    margin:5rem; 
+    width: 65%;
 }
 .lateEpTitles h2{
     font-family: DM sans;
@@ -149,22 +160,23 @@ nav h2{
 /* Knopka episodes */
 
 .blueBtn{
-    margin:24px 0 24px 610px;
+    margin: 1rem 0 1rem 0;
     border-radius: 6px;
     background-color:#118DA8;
     border-style: none;
     border-color: 0;
     border-image: none;
     width: fit-content;
-    height: 51px;  
+    height: 51px; 
+
 }
 .blueBtn:hover{
     box-shadow: 0 0 6px 4px rgba(255, 255, 255, 0.70);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .blueBtn a{
     text-decoration: none;
-    padding:12px 15px 12px 20px;
+    padding: 0 1em;
     color: #FFF;
     font-family: DM Sans;
     font-size: 14px;
@@ -174,8 +186,7 @@ nav h2{
 /* Episodes Frames */
 
 .epSections{
-    width: 1330px;
-    height: fit-content;
+    max-width: 70%;
     color: #fff;
 }
 .ep{
@@ -188,8 +199,8 @@ nav h2{
 }
 .epInfo{
     margin-left:53px;
-    width: 778px;
-    height: 465px;
+    /* max-width: 60%; */
+    max-height: 465px;
 }
 
 /* Info texts */
@@ -231,8 +242,7 @@ nav h2{
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 33px;
-    width: 757px;
+    overflow: hidden;
 }
 #epInfoButton{
     margin:25px 570px 0 0;
@@ -245,7 +255,6 @@ nav h2{
     justify-content: center;
     align-items: center;
     font-family: inherit;
-    width: 1400px;
     margin-top:100px;
 }
 .ceoInfo{
@@ -303,19 +312,20 @@ nav h2{
     margin-top:33px;
 }
  /* Email Form Section */
+ 
  .emailFormSection{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1300px;
-    height: 387px;
+    width: 65vw;
+    /* height: 387px; */
     flex-shrink: 0;
     border-radius: 32px;
     background: #000;
-    margin: 150px 50px 100px 50px;
+    margin:20vh;
  }
  .emailFormTexts{
-    margin: 80px 120px 120px 60px;
+    margin: 3rem 5rem 5rem 5rem;
     width: 50%;
  }
  .emailFormTexts p{
@@ -334,8 +344,7 @@ nav h2{
     font-weight: 400;
     line-height: 79.2px;
     letter-spacing: 2.88px;
-    width: 431px;
-    padding:
+    /* width: 431px; */
  }
  .emailForm{
     display: flex;
@@ -400,4 +409,84 @@ nav h2{
     font-style: normal;
     font-weight: 400;
     line-height: 27px;
+ }
+
+ /* Feedback Section */
+
+ .feedbackSection{
+    display: flex;
+    justify-content: space-around;
+    height: 900px;
+    max-width: inherit;
+    flex-wrap: wrap;
+    margin:0 50px;
+    max-width: 1400px;
+ }
+ .feedbackFrames{
+    min-width: 410px;
+    width: fit-content;
+    max-height: 321px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+ }
+ .starsBlock{
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 2em;
+
+ }
+ .starsBlock img{
+    padding-right:2%;
+ }
+ .feedbackFrames h4{
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43.2px;
+    max-width: 313px;
+    word-wrap: normal;
+ }
+.feedbackFrames p{
+    color: rgba(255, 255, 255, 0.70);
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    margin:5% auto 2% 3rem;
+ }
+
+ /* Footer */
+
+ .footer{
+    height: 70px;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0;
+    padding:0 50px;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+ }
+ .tittleNLogo{
+    max-width: 30%;
+ }
+ .footer h2{
+    font-size: 35px;
+ }
+ .tittleNLogo img{
+    margin-top:1rem;
+    padding-right: 1rem;
  }

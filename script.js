@@ -16,15 +16,12 @@ function myFunction() {
 
 let emailFormBtn = document.getElementById ('efBtn')
 
- 
-
-
 emailFormBtn.addEventListener ('click', function(){
   let emailFormName = document.getElementById ('emailFormName').value
   let emailFormEmail = document.getElementById ('emailFormEmail').value
 
   if ( emailFormEmail && emailFormName !== 0){
-      alert('Thank you dear ,'+ emailFormName +' , we will definitely contact you at the earliest opportunity!')
+      alert('Thank you dear , '+ emailFormName +' , we will be sure to spam all your email!')
     }
   else{  
     alert ('Enter your information!')
